@@ -20,3 +20,4 @@ public class Palindrome {
         }
     }
 }
+//t(n)=O(n)
