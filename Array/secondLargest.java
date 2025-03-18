@@ -1,5 +1,5 @@
 public class secondLargest {
-    static int secondL(int arr[]) {
+    static int secondLargest(int arr[]) {
         int n = arr.length;
         if (n < 2) return -1;  // If less than 2 elements, return -1
 
@@ -22,7 +22,7 @@ public class secondLargest {
 
     public static void main(String[] args) {
         int arr[] = {10, 5, 8, 20, 15};  // Example array
-        int result = secondL(arr);
+        int result = secondLargest(arr);
         
         if (result == -1) {
             System.out.println("No second largest element found.");
