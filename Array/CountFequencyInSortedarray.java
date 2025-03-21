@@ -4,7 +4,7 @@ public class CountFequencyInSortedarray {
         int freq=1;
         int i=1;
         while(i<n){
-            while(i<n && arr[i]==arr[i-1]){
+            while( arr[i]==arr[i-1]){
                 freq++;
                 i++;
 

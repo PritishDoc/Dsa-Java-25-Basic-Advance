@@ -1,18 +1,19 @@
 public class CountFequencyForUnsortedArray {
     static void unsrotedfreq(int arr[]){
-        int freq=1;
+
         int n=arr.length;
-
-        for(int i=0;i<n-1;i++){
-            for(int j=1;j<n;j++){
-                if(j<n &&arr[i]==arr[j]){
+        boolean visited[]=new boolean[n];
+        for(int i=0;i<n;i++){
+            if(visited[i]) continue;
+            int freq=1;
+            
+            for(int j=i+1;j<n;j++){
+                if(arr[i]==arr[j]){
                     freq++;
-
+                    visited[j]=true;
                 }
-                System.out.println(arr[i]+"->"+freq);
-                freq=1;
             }
-
+            System.out.println(arr[i]+"->"+freq);
         }
     }
     public static void main(String[] args) {
