@@ -4,18 +4,18 @@ public class MaximumLengthEvenOddSubArrayOptimized {
         static int EvenOddLength(int arr[]){
             int res=1;
             int curr=1;
-            for(int i=0;i<arr.length;i++){
+            for(int i=1;i<arr.length;i++){
                 
-                for(int j=i+1;j<arr.length;j++){
-                    if((arr[j]%2==0 && arr[j-1]%2!=0) || (arr[j]%2!=0 && arr[j-1]==0)){
+               
+                    if((arr[i]%2==0 && arr[i-1]%2!=0) || (arr[i]%2!=0 && arr[i-1]%2==0)){
                         curr++;
-    
+                        //res=Math.max(res,curr);
                     }
                     else{
-                        break;
+                        curr=1;
                     }
                 }
-            }
+            
             return res=Math.max(res,curr);
         }
         public static void main(String[] args) {
