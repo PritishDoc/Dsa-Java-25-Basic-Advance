@@ -13,7 +13,7 @@ class p{
 
 class k extends p{
     
-     k=7;
+  //   k=7;
    k(){
     System.out.println(k);
     k=10;
