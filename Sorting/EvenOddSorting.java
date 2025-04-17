@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class EvenOddSorting {
-    // Custom comparator class
+   
     static class MyComparator implements Comparator<Integer> {
         public int compare(Integer a, Integer b) {
             // Sort by even first, then odd
