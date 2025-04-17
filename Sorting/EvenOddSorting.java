@@ -6,7 +6,7 @@ public class EvenOddSorting {
    
     static class MyComparator implements Comparator<Integer> {
         public int compare(Integer a, Integer b) {
-            // Sort by even first, then odd
+            
             return (a % 2) - (b % 2);
         }
     }
