@@ -15,9 +15,6 @@ static int[] Target(int arr[],int target){
     }
     return new int[]{};
 }
-
- 
-
     public static void main(String[] args) {
         int arr[]={2,32,4,5,4,3,9};
         System.out.println(Target(arr, 36));
