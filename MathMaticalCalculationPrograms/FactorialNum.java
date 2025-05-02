@@ -9,8 +9,10 @@ public class FactorialNum {
     public static void main(String[] args) {
         int n=5;
 
-        
 
+
+
+        
         System.out.println("The factorial num is: "+fact(n));
     }
 }
