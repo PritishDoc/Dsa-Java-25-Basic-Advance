@@ -12,7 +12,7 @@ public class FactorialNum {
 
 
 
-        
+        //print 
         System.out.println("The factorial num is: "+fact(n));
     }
 }
