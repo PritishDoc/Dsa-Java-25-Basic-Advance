@@ -11,7 +11,7 @@ public class ArraySortedOptimized {
         return true;
     }
     public static void main(String[] args) {
-        
+        int arr[]={2,3,44,5,6};
         System.out.println(sorted(arr));
     }
     
