@@ -1,14 +1,11 @@
 public class practice2 {
 
     public static void main(String[] args) {
-        int a=0;
-        int b=1;
-        int c=0;
-        for(int i=1;i<=30;i++){
-            
+        int a=0,b=1;
+        int n=10;
+        for(int i=2;i<=n;i++){
             System.out.println(a+" ");
-            //System.out.println(c+" ");
-            c=a+b;
+            int c=a+b;
             a=b;
             b=c;
         }
